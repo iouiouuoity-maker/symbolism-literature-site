@@ -1,55 +1,132 @@
 body{
 margin:0;
-font-family:Arial;
-background:#0f2027;
+font-family:Poppins, sans-serif;
+background:linear-gradient(135deg,#141e30,#243b55);
 color:white;
 }
 
 header{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:40px;
-background:#203a43;
+background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+}
+
+header h1{
+font-size:70px;
+background:linear-gradient(90deg,#fff,#9bdfff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+header p{
+font-size:22px;
+max-width:700px;
 }
 
 nav{
-background:white;
-padding:15px;
-text-align:center;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
 }
 
 nav a{
-margin:15px;
+color:white;
 text-decoration:none;
-font-weight:bold;
-color:#333;
+font-size:18px;
+transition:0.3s;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:30px;
+nav a:hover{
+color:#6dd5fa;
+}
+
+section{
+padding:80px 10%;
 }
 
 .cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
 }
 
 .card{
-background:white;
-color:black;
-padding:20px;
-border-radius:10px;
-width:260px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+border-radius:15px;
+padding:25px;
+transition:0.3s;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
 }
 
 .card img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+border-radius:10px;
+overflow:hidden;
+}
+
+th{
+background:#1c3b52;
+}
+
+th,td{
+padding:18px;
+text-align:center;
+}
+
+.quiz{
+max-width:600px;
+margin:auto;
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:15px;
+text-align:center;
 }
 
 button{
-padding:10px 15px;
-margin:5px;
+padding:12px 25px;
+margin:10px;
+border:none;
+border-radius:8px;
+background:linear-gradient(90deg,#36d1dc,#5b86e5);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.7;
 }
